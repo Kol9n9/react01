@@ -1,0 +1,25 @@
+.userAuthorization input{
+    margin-bottom: 20px;
+}
+.userAuthorization input[type="text"],.userAuthorization input[type="password"]{
+    padding: 4px;
+    border:1px solid grey;
+    border-radius: 7px;
+    width: -webkit-fill-available;
+    text-align: center;
+    font-size: 20px;
+}
+.userAuthorization input[type="button"]{
+    border:1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.userAuthorization input[type="button"]:hover{
+    background: rgba(0,0,0,0.5);
+}

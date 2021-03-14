@@ -1,0 +1,39 @@
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.LeftBar, .Content, .RightBar{
+    padding: 10px;
+    float:left;
+}
+.Content{
+    width: 55%;
+}
+.LeftBar{
+    width: 20%;
+}
+.RightBar{
+    width: 20%;
+    float:right;
+}
+.SideBlock{
+    width: 80%;
+    margin-bottom: 30px;
+}
+.SideBlockTitle{
+    background: rgb(126 135 144);
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+    text-align: center;
+}
+.SideBlockTitle p{
+    font-size: 20px;
+    color: darkred;
+}
+.SideBlockContent{
+    border: 2px solid rgb(126 135 144);
+    padding: 10px;
+}
+.clear{
+    clear:both;
+}

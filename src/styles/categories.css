@@ -1,0 +1,20 @@
+.MainCategories{
+    padding: 10px;;
+}
+.MainCategories li{
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.MainCategories p{
+    margin-bottom: 7px;
+}
+.MainCategories li>p:first-child:hover{
+    text-decoration: underline;
+}
+.MainCategories li>ul{
+    margin-left: 30px;
+} 
+.MainCategories .SubCategory{
+    display: none;
+}

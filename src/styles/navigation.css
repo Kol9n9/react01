@@ -1,0 +1,23 @@
+nav{
+    background: rgb(154 164 173);
+    margin-bottom: 20px;
+}
+nav ul{
+    margin-left: 20px;
+}
+nav ul>li{
+    display: inline-block;
+    border-left: 1px solid transparent;
+    border-right: 1px solid black;
+}
+nav ul>li:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+nav ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+}

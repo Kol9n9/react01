@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="reset.css">
+    <link rel = "stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Internet-Shop: <a href="#">InterShop.ru</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Товары</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Форум</a></li>
+        </ul> 
+    </nav>
+    <div class="wrapper">
+        <aside class="LeftBar">
+            <div class="SideBlock">
+                <div class="SideBlockTitle">
+                    <p>Личный кабинет</p>
+                </div>
+                <div class="SideBlockContent">
+                    <form class="userAuthorization" action="#">
+                        <input id="userLogin" type="text" placeholder="Логин"/>
+                        <input id="userPassword" type="password" placeholder="Пароль"/>        
+                        <input type="button" value="Войти"/>
+                        <input type="button" value="Регистрация"/>
+                    </form>
+                </div>
+            </div>
+            <div class="SideBlock">
+                <div class="SideBlockTitle">
+                    <p>Категории</p>
+                </div>
+                <div class="SideBlockContent">
+                    <ul class="MainCategories">
+                        <li id="category#0">
+                            <p>Телефоны <span>(25)</span></p>
+                        </li>
+                        <li id="categories#1">
+                            <p>Ноутбуки <span>(0)</span></p>
+                        </li>
+                        <li id="category#2" subcategoryid="category#4" onclick="ClickCategory(this)">
+                            <p>Комплектущие <span>(230)</span></p>
+                            <ul id="category#4" class="SubCategory">
+                                <li subcategoryid="category#5" onclick="ClickCategory(this)">
+                                    <p>Процессоры <span>(25)</span></p>
+                                    <ul id="category#5" class="SubCategory">
+                                        <li>
+                                            <p>Процессоры <span>(25)</span></p>
+                                        </li>
+                                        <li><p>Видеокарты <span>(30)</span></p></li>
+                                        <li><p>Оперативная память <span>(150)</span></p></li>
+                                        <li><p>Жесткий диск <span>(2)</span></p></li>
+                                    </ul>
+                                </li>
+                                <li><p>Видеокарты <span>(30)</span></p></li>
+                                <li><p>Оперативная память <span>(150)</span></p></li>
+                                <li><p>Жесткий диск <span>(2)</span></p></li>
+                            </ul>
+                        </li>
+                        <li id="category#3"><p>Мониторы <span>(20)</span></p></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <main class="Content">
+            <section>
+                <h1>Последние товары</h1>
+                <div class="Goods">
+                    <div class="Good">
+                        <div class="GoodTitle">
+                            <p>Huawei y6</p>
+                        </div>
+                        <div class="GoodImg"><img src="https://buyoncdn.ru/product/135852811/product_mainpage/1697784/huawei-y6p-midnight-emerald-green.jpg" alt="Huawei y6"></div>
+                        <div class="GoodDescription">
+                            <p class="GoodPrice">Цена: <span>999 Р</span></p>
+                            <div class="GoodButtons"><button>В корзину</button></div>
+                        </div>
+                    </div>
+                    <div class="Good">
+                        <div class="GoodTitle">
+                            <p>Intel Core i9</p>
+                        </div>
+                        <div class="GoodImg"><img src="https://newmart.ru/upload/iblock/75a/75add935cd205c1f18be50df5c1c3ba7.jpg" alt="Intel Core i9"></div>
+                        <div class="GoodDescription">
+                            <p class="GoodPrice">Цена: <span>999 Р</span></p>
+                            <div class="GoodButtons"><button>В корзину</button></div>
+                        </div>
+                    </div>
+                    <div class="Good">
+                        <div class="GoodTitle">
+                            <p>Western Digital</p>
+                        </div>
+                        <div class="GoodImg"><img src="https://reolinkpro.ru/userfls/shop/large/233_zhestkiy-disk-western-digital-wd-purple-.jpg" alt="Western Digital"></div>
+                        <div class="GoodDescription">
+                            <p class="GoodPrice">Цена: <span>999 Р</span></p>
+                            <div class="GoodButtons"><button>В корзину</button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1>Популярные товары</h1>
+                <div class="Goods">
+                    <div class="Good">
+                        <div class="GoodTitle">
+                            <p>Huawei y6</p>
+                        </div>
+                        <div class="GoodImg"><img src="https://buyoncdn.ru/product/135852811/product_mainpage/1697784/huawei-y6p-midnight-emerald-green.jpg" alt="Huawei y6"></div>
+                        <div class="GoodDescription">
+                            <p class="GoodPrice">Цена: <span>999 Р</span></p>
+                            <div class="GoodButtons"><button>В корзину</button></div>
+                        </div>
+                    </div>
+                    <div class="Good">
+                        <div class="GoodTitle">
+                            <p>Intel Core i9</p>
+                        </div>
+                        <div class="GoodImg"><img src="https://newmart.ru/upload/iblock/75a/75add935cd205c1f18be50df5c1c3ba7.jpg" alt="Intel Core i9"></div>
+                        <div class="GoodDescription">
+                            <p class="GoodPrice">Цена: <span>999 Р</span></p>
+                            <div class="GoodButtons"><button>В корзину</button></div>
+                        </div>
+                    </div>
+                    <div class="Good">
+                        <div class="GoodTitle">
+                            <p>Western Digital</p>
+                        </div>
+                        <div class="GoodImg"><img src="https://reolinkpro.ru/userfls/shop/large/233_zhestkiy-disk-western-digital-wd-purple-.jpg" alt="Western Digital"></div>
+                        <div class="GoodDescription">
+                            <p class="GoodPrice">Цена: <span>999 Р</span></p>
+                            <div class="GoodButtons"><button>В корзину</button></div>
+                        </div>
+                    </div>
+                    <div class="Good">
+                        <div class="GoodTitle">
+                            <p>Western Digital</p>
+                        </div>
+                        <div class="GoodImg"><img src="https://reolinkpro.ru/userfls/shop/large/233_zhestkiy-disk-western-digital-wd-purple-.jpg" alt="Western Digital"></div>
+                        <div class="GoodDescription">
+                            <p class="GoodPrice">Цена: <span>999 Р</span></p>
+                            <div class="GoodButtons"><button>В корзину</button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <aside class="RightBar">
+            <div class="SideBlock">
+                <div class="SideBlockTitle">
+                    <p>Корзина</p>
+                </div>
+                <div class="SideBlockContent">
+                    <div class="MainShop">
+                        <img src="https://img2.freepng.ru/20180402/evq/kisspng-shopping-cart-online-shopping-computer-icons-shopping-basket-5ac26738812c99.9361431615226898485291.jpg" alt="Cart">
+                        <p>В корзине : <span>0</span> шт</p>
+                        <button>В корзину</button>
+                    </div>
+                </div>
+            </div>
+            <div class="SideBlock">
+                <div class="SideBlockTitle">
+                    <p>Новости</p>
+                </div>
+                <div class="SideBlockContent">
+                    <ul class="news">
+                        <li><a href="#">Новость #4</a></li>
+                        <li><a href="#">Новость #3</a></li>
+                        <li><a href="#">Новость #2</a></li>
+                        <li><a href="#">Новость #1</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="clear"></div>
+    <footer>Fotter</footer>
+    <script>
+        function OpenSubCategory(id)
+        {
+            console.log(id);
+            document.getElementById(id).style.display = "block";
+        }
+        function ClickCategory(element)
+        {
+            console.log(element);
+            const SubCategoryID =  element.getAttribute("subcategoryid");
+            if(SubCategoryID === 'undefined')
+            {
+                // open category
+                return;
+            }
+            OpenSubCategory(SubCategoryID);
+
+        }
+    </script>
+</body>
+</html>
